@@ -5,7 +5,7 @@ LD=gcc
 CFLAGS=-Wall
 VACCEL_CFLAGS=-I../vaccelrt/src
 VACCEL_LDFLAGS=-L../vaccelrt/build/src -lvaccel -ldl
-VADD_LDFLAGS=-L${PWD}/fpga_example/sample -lvector_add
+VADD_LDFLAGS=-L${PWD}/fpga_example/build/sample -lsample1
 OCL_LDFLAGS=-L/usr/lib/x86_64-linux-gnu/ -lOpenCL
 
 

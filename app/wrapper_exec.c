@@ -5,7 +5,7 @@
 
 #include <vaccel.h>
 
-int vaccel_vector_add()
+int fpga_sample1()
 {
 	int ret = 0;
 	struct vaccel_session sess;
@@ -18,8 +18,9 @@ int vaccel_vector_add()
 
         printf("Initialized session with id: %u\n", sess.session_id);
 
-	char *library = "opencl_examples/build/vector_add/libvector_add.so";
-	char *operation = "vector_add";
+	//char *library = "opencl_examples/build/vector_add/libvector_add.so";
+        char *library = "fpga_example/build/sample/libsample1.so";
+        char *operation = "sample1";
 
         ret = vaccel_exec(&sess, library, operation, NULL, 0, NULL, 0);
 	if (ret) {
@@ -36,9 +37,9 @@ close_session:
 	return ret;
 }
 
-int vector_add()
+int sample1()
 {
-	vaccel_vector_add();
+	fpga_sample1();
 
 	return 0;
 }
