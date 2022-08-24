@@ -13,6 +13,7 @@ make
 
 
 > $./sample/fpga_sample1
+```
 time = 0.005855 sec
 time = 0.006024 sec
 time = 0.006050 sec
@@ -23,6 +24,7 @@ time = 0.006083 sec
 time = 0.006032 sec
 time = 0.006097 sec
 time = 0.006028 sec
+```
 ---------------------------------------
 Applying patch are the versions with no _ as prefix
 
@@ -36,7 +38,8 @@ cd ../../
 make wrapper
 ```
 Throws the same error as in lab3 then:
->LD_LIBRARY_PATH=fpga_example/build/sample/ ./wrapper 
+>LD_LIBRARY_PATH=fpga_example/build/sample/ ./wrapper
+``` 
 >time = 0.006113 sec
 time = 0.006091 sec
 time = 0.006049 sec
@@ -47,6 +50,7 @@ time = 0.006128 sec
 time = 0.006092 sec
 time = 0.006599 sec
 time = 0.006110 sec
+```
 ---------------------------------------
 Again:
 
