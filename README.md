@@ -40,7 +40,7 @@ make wrapper
 Throws the same error as in lab3 then:
 >LD_LIBRARY_PATH=fpga_example/build/sample/ ./wrapper
 ``` 
->time = 0.006113 sec
+time = 0.006113 sec
 time = 0.006091 sec
 time = 0.006049 sec
 time = 0.006073 sec
