@@ -22,7 +22,7 @@ int uio_wait_irq(int uio_fd)
     return read(uio_fd, &count,  sizeof(count));
 }
 
-void sample1()
+void main()
 {
     int            uio_fd;
     void*          regs;
