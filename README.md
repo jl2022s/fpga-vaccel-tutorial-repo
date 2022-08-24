@@ -63,7 +63,9 @@ cd ../../app
 make libwrapper.so
 make wrapper-vaccel
 ```
+
 >LD_LIBRARY_PATH=.:../vaccelrt/build/src/ VACCEL_DEBUG_LEVEL=4 VACCEL_BACKENDS=../vaccelrt/build/plugins/exec/libvaccel-exec.so ./wrapper-vaccel 
+```
 2022.03.21-07:22:08.52 - <debug> Initializing vAccel
 2022.03.21-07:22:08.52 - <debug> Registered plugin exec
 2022.03.21-07:22:08.52 - <debug> Registered function noop from plugin exec
@@ -90,5 +92,6 @@ time = 0.006036 sec
 2022.03.21-07:22:09.32 - <debug> Shutting down vAccel
 2022.03.21-07:22:09.32 - <debug> Cleaning up plugins
 2022.03.21-07:22:09.32 - <debug> Unregistered plugin exec
+```
 ---------------------------------------
 
